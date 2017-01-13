@@ -1,0 +1,68 @@
+mixin make_post(item, is_detail)
+	.post.animated.fadeInDown
+		.post-title
+			h3
+				if is_detail
+					a= item.title
+				else
+					a(href= url_for(item.path))= item.title
+		if is_detail
+			.post-content!= item.content
+		else
+			.post-content
+				p= truncate(strip_html(item.content), {length: 160})
+		.post-footer: .meta
+			.info
+				i.fa.fa-sun-o
+				span.date= date(item.date, 'YYYY-MM-DD')
+				if theme.duoshuo
+					i.fa.fa-comment-o
+					a(href= url_for(item.path + "#comments"))= __('Comments')
+				if item.tags
+					i.fa.fa-tag
+					- item.categories.sort('posts').each(function(item) {
+							a.tag(href=config.root + item.path, title= item.name)= item.name + " "
+					- });
+					- item.tags.sort('posts').each(function(item) {
+							a.tag(href=config.root + item.path, title= item.name)= item.name + " "
+					- });
+
+
+mixin make_pager()
+	- var prev = page.prev_link
+	- var next = page.next_link
+	.pagination
+		ul.clearfix
+			if page.prev
+				li.pre.pagbuttons
+					a.btn(role="navigation",href=url_for(prev))= __('prev')
+			if page.next
+				li.next.pagbuttons
+					a.btn(role="navigation",href=url_for(next))= __('next')
+
+mixin postList()
+	.archive
+		- var year = 0;
+		- var change = false;
+		- var firstYear = true;
+		- page.posts.each(function (item) {
+			- var itemYear = date(item.date, 'YYYY') - 0;
+			- change = year !== itemYear;
+			- year = change ? itemYear : year;
+			if change
+				if firstYear
+					| <div class="listing-title">
+					!= year
+					| </div><ul class="listing">
+					- firstYear = false;
+				else
+					| </ul><div class="listing-title">
+					!= year
+					| </div><ul class="listing">
+			
+			.listing-item
+				.listing-post
+					a(href= url_for(item.path), title= item.title)= item.title
+					div.post-time
+						span.date= date(item.date, 'MM-DD')
+		- })

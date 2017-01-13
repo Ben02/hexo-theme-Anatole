@@ -1,0 +1,15 @@
+doctype
+html(lang="zh-CN")
+  head
+    include head
+
+  body
+    include sidebar
+    .main
+      include nav
+
+      block content
+
+    script(src= url_for('js/jquery.js'))
+    script(src= url_for('js/jquery-migrate-1.2.1.min.js'))
+    script(src= url_for('js/jquery.appear.js'))

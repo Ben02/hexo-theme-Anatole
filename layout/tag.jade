@@ -1,0 +1,15 @@
+extends partial/layout
+
+block site_title
+	!= page.tag + " · " + config.title
+
+block description
+	- var desc = '标签：' + page.tag + ' - ' + config.title;
+	meta(name="description", content=desc)
+
+block content
+	.autopagerize_page_element: .content
+		.archive.animated.fadeInDown
+			ul.list-with-title
+				include mixins
+				+postList()
