@@ -19,7 +19,7 @@ block content
       .weibo 
         a.fa.fa-weibo(href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));")
       .twitter 
-        a.fa.fa-twitter(href=url_for("http://twitter.com/home?status="+","+url_for(page.path)+","+config.title+","+page.title+",;"))
+        a.fa.fa-twitter(href=url_for("http://twitter.com/home?status="+","+config.url+"/"+page.path+","+config.title+","+page.title+",;"))
     - var prev = page.prev ? page.prev.path : false;
     - var next = page.next ? page.next.path : false; 
     .pagination
