@@ -9,28 +9,36 @@ This is a theme originated from a Farbox theme, which is now available in your H
 
 ### Usage
 
+```
   cd blog ##folder where your Hexo blog is in
   npm install --save hexo-renderer-jade hexo-generator-archive ##these plugins are required
   git clone https://github.com/Ben02/hexo-theme-Anatole.git themes/anatole ##or you can download zip in this page
+```
 
 Edit your `_config.yml`, find `theme:` and change that line into `theme: anatole`, then add these lines:
 
+```
   archive_generator:
     per_page: 0
     yearly: false
     monthly: false
     daily: false
+```
 
 ### Update
 
+```
   cd themes/anatole
   git pull
+ ```
 
 Attention: If you usually push your blog files to GitHub or else, you may encounter an error like:
 
+```
   Changes not staged for commit:
 
   modified:   themes/anatole
+```
 
 It is supposed that you delete the `.git` folder in `themes/anatole`. In this case, you can download zip in this page to update.
 
@@ -44,16 +52,20 @@ You can set a certain information about your blog in `themes/anatole/_config.yml
 
 If you want to set meta description information, please set `desc` property and value to each post — the better method is setting default `desc` property to your scaffolds files, just like:
 
+```
   title: Lorem ipsum dolor
   date: 2015-12-31 14:49:13
   desc: Lorem ipsum dolor sit amet, consectetur.
   ---
 
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, non numquam saepe ex ut. Deleniti culpa inventore consectetur nam saepe!
+```
 
 result:
 
+```
   <meta name="description" content="Lorem ipsum dolor sit amet, consectetur.">
+```
 
 If there is no `desc` property or value, hexo-theme-Anatole will use `page.title` and `page.author` instead of it.
 
@@ -61,7 +73,9 @@ If there is no `desc` property or value, hexo-theme-Anatole will use `page.title
 
 hexo-theme-Anatole supports two comment plugins: Disqus and Duoshuo. please set like this in your `theme/anatole/_config.yml`:
 
+```
   disqus: seansun
+```
 
 Attention: To make the comment plugin work properly, please set the right username.
 
@@ -69,9 +83,11 @@ Attention: To make the comment plugin work properly, please set the right userna
 
 Use html tag with special class property to render block:
 
+```
   <div class="tip">
       Something Important...
   </div>
+```
 
 It looks like:
 
