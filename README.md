@@ -9,7 +9,7 @@ This is a theme originated from a Farbox theme, which is now available in your H
 
 ### Usage
 
-```
+```bash
   cd blog ##folder where your Hexo blog is in
   npm install --save hexo-renderer-jade hexo-generator-archive ##these plugins are required
   git clone https://github.com/Ben02/hexo-theme-Anatole.git themes/anatole ##or you can download zip in this page
@@ -17,7 +17,7 @@ This is a theme originated from a Farbox theme, which is now available in your H
 
 Edit your `_config.yml`, find `theme:` and change that line into `theme: anatole`, then add these lines:
 
-```
+```yaml
   archive_generator:
     per_page: 0
     yearly: false
@@ -27,14 +27,14 @@ Edit your `_config.yml`, find `theme:` and change that line into `theme: anatole
 
 ### Update
 
-```
+```bash
   cd themes/anatole
   git pull
  ```
 
 Attention: If you usually push your blog files to GitHub or else, you may encounter an error like:
 
-```
+```bash
   Changes not staged for commit:
 
   modified:   themes/anatole
@@ -48,11 +48,15 @@ It is supposed that you delete the `.git` folder in `themes/anatole`. In this ca
 
 You can set a certain information about your blog in `themes/anatole/_config.yml`, like `keywords`, `author`, `description`, `avatar`, and your social accounts.
 
+#### English Display
+
+Just delete `/thems/anatole/languages/zh-cn.yml`.
+
 #### Meta Description
 
 If you want to set meta description information, please set `desc` property and value to each post — the better method is setting default `desc` property to your scaffolds files, just like:
 
-```
+```yaml
   title: Lorem ipsum dolor
   date: 2015-12-31 14:49:13
   desc: Lorem ipsum dolor sit amet, consectetur.
@@ -63,7 +67,7 @@ If you want to set meta description information, please set `desc` property and 
 
 result:
 
-```
+```html
   <meta name="description" content="Lorem ipsum dolor sit amet, consectetur.">
 ```
 
@@ -73,7 +77,7 @@ If there is no `desc` property or value, hexo-theme-Anatole will use `page.title
 
 hexo-theme-Anatole supports two comment plugins: Disqus and Duoshuo. please set like this in your `theme/anatole/_config.yml`:
 
-```
+```yaml
   disqus: seansun
 ```
 
@@ -83,7 +87,7 @@ Attention: To make the comment plugin work properly, please set the right userna
 
 Use html tag with special class property to render block:
 
-```
+```html
   <div class="tip">
       Something Important...
   </div>
