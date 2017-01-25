@@ -8,7 +8,7 @@ pre {
 	font-family: 'Roboto Mono','Lucida Console','Trebuchet MS','Courier New', Monaco, courier,'PingFang SC','Hiragino Sans GB','Microsoft Jhenghei','Microsoft YaHei', monospace!important
 }
 
-.highlight {
+figure.highlight {
 	position: relative!important;
 	margin: 1em 0!important;
 	border-radius: 2px!important;
@@ -17,24 +17,24 @@ pre {
 	overflow-x: auto!important
 }
 
-.highlight table,.highlight tr,.highlight td {
+figure.highlight table,figure.highlight tr,figure.highlight td {
 	width: 100%!important;
 	border-collapse: collapse!important;
 	padding: 0!important;
 	margin: 0!important
 }
 
-.highlight .gutter {
+figure.highlight .gutter {
 	display: none!important
 }
 
-.highlight .code pre {
+figure.highlight .code pre {
 	padding: 1.2em 1.4em!important;
 	line-height: 1.5em!important;
 	margin: 0!important
 }
 
-.highlight.html .code:after,.highlight.js .code:after,.highlight.bash .code:after,.highlight.css .code:after,.highlight.scss .code:after,.highlight.diff .code:after,.highlight.java .code:after,.highlight.xml .code:after,.highlight.python .code:after,.highlight.json .code:after,.highlight.swift .code:after,.highlight.ruby .code:after,.highlight.perl .code:after,.highlight.php .code:after,.highlight.c .code:after,.highlight.cpp .code:after {
+figure.highlight.html .code:after,figure.highlight.js .code:after,figure.highlight.bash .code:after,figure.highlight.css .code:after,figure.highlight.scss .code:after,figure.highlight.diff .code:after,figure.highlight.java .code:after,figure.highlight.xml .code:after,figure.highlight.python .code:after,figure.highlight.json .code:after,figure.highlight.swift .code:after,figure.highlight.ruby .code:after,figure.highlight.perl .code:after,figure.highlight.php .code:after,figure.highlight.c .code:after,figure.highlight.cpp .code:after {
 	position: absolute!important;
 	top: 0!important;
 	right: 0!important;
@@ -47,75 +47,75 @@ pre {
 	font-weight: 600!important
 }
 
-.highlight.html .code:after {
+figure.highlight.html .code:after {
 	content: "HTML"
 }
 
-.highlight.js .code:after {
+figure.highlight.js .code:after {
 	content: "JS"
 }
 
-.highlight.bash .code:after {
+figure.highlight.bash .code:after {
 	content: "BASH"
 }
 
-.highlight.css .code:after {
+figure.highlight.css .code:after {
 	content: "CSS"
 }
 
-.highlight.scss .code:after {
+figure.highlight.scss .code:after {
 	content: "SCSS"
 }
 
-.highlight.diff .code:after {
+figure.highlight.diff .code:after {
 	content: "DIFF"
 }
 
-.highlight.java .code:after {
+figure.highlight.java .code:after {
 	content: "JAVA"
 }
 
-.highlight.xml .code:after {
+figure.highlight.xml .code:after {
 	content: "XML"
 }
 
-.highlight.python .code:after {
+figure.highlight.python .code:after {
 	content: "PYTHON"
 }
 
-.highlight.json .code:after {
+figure.highlight.json .code:after {
 	content: "JSON"
 }
 
-.highlight.swift .code:after {
+figure.highlight.swift .code:after {
 	content: "SWIFT"
 }
 
-.highlight.ruby .code:after {
+figure.highlight.ruby .code:after {
 	content: "RUBY"
 }
 
-.highlight.perl .code:after {
+figure.highlight.perl .code:after {
 	content: "PERL"
 }
 
-.highlight.php .code:after {
+figure.highlight.php .code:after {
 	content: "PHP"
 }
 
-.highlight.c .code:after {
+figure.highlight.c .code:after {
 	content: "C"
 }
 
-.highlight.java .code:after {
+figure.highlight.java .code:after {
 	content: "JAVA"
 }
 
-.highlight.cpp .code:after {
+figure.highlight.cpp .code:after {
 	content: "CPP"
 }
 
-.highlight.cpp .code:after {
+figure.highlight.cpp .code:after {
 	content: 'C++'
 }
 
