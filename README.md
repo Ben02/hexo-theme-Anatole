@@ -7,6 +7,8 @@ This is a theme originated from a Farbox theme, which is now available in your H
 ![](http://labcdn.qiniudn.com/anatole/QQ%E6%88%AA%E5%9B%BE20170113193419.png)
 ![](http://labcdn.qiniudn.com/anatole/QQ%E6%88%AA%E5%9B%BE20170114145625.png)
 
+[中文文档](https://munen.cc/tech/Anatole.html) | [English Wiki](#usage)
+
 ## Usage
 
 ```bash
