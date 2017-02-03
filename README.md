@@ -2,7 +2,7 @@
 
 forked from [farbox-theme-Anatole](https://github.com/hi-caicai/farbox-theme-Anatole).
 
-This is a theme originated from a Farbox theme, which is now available in your Hexo blog. Features: two-column, responsive, clean, light, and comfortable.
+Anatole is a theme originated from a Farbox theme, now available in your Hexo blog. Features: two-column, responsive, clean, light, and comfortable.
 
 ![](http://labcdn.qiniudn.com/anatole/QQ%E6%88%AA%E5%9B%BE20170113193419.png)
 ![](http://labcdn.qiniudn.com/anatole/QQ%E6%88%AA%E5%9B%BE20170114145625.png)
@@ -98,6 +98,10 @@ Use html tag with special class property to render block:
 It looks like:
 
 ![](http://labcdn.qiniudn.com/anatole/QQ%E6%88%AA%E5%9B%BE20170114141008.png)
+
+### Customize Your Navbar
+
+Hexo-theme-anatole shows links of 'About' and 'Links' pages in navbar by default. You should create two pages whose permalinks are `about` and `links`. If you would like to change those two urls or delete them, you can edit `/layout/partrial/nav.jade`.  
 
 ## For A Better Experience
 
