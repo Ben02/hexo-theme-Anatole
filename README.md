@@ -79,7 +79,7 @@ result:
 <meta name="description" content="Lorem ipsum dolor sit amet, consectetur.">
 ```
 
-If there is no `desc` property or value, hexo-theme-Anatole will use `page.title` and `page.author` instead of it.
+If there is no `desc` property or value, hexo-theme-Anatole will use the first 150 characters of your post instead of it.
 
 ### Comment Plugin
 
