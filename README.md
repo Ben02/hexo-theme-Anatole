@@ -54,6 +54,12 @@ You can set a certain information about your blog in `themes/anatole/_config.yml
 
 Just delete `/themes/anatole/languages/zh-cn.yml`.
 
+### Index Description
+
+hexo-theme-Anatole truncates text of your posts after 160 characters in index, category, and tag pages. To change the length, you can edit `/layout/mixins.jade`, find `p= truncate(strip_html(item.content), {length: 160})` then change the number `160`.
+
+( P.S. The function to control each description of your posts is still testing, you are welcomed to make a pull request to make it true. )
+
 ### Meta Description
 
 If you want to set meta description information, please set `desc` property and value to each post — the better method is setting default `desc` property to your scaffolds files, just like:
@@ -101,7 +107,7 @@ It looks like:
 
 ### Customize Your Navbar
 
-Hexo-theme-anatole shows links of 'About' and 'Links' pages in navbar by default. You should create two pages whose permalinks are `about` and `links`. If you would like to change those two urls or delete them, you can edit `/layout/partrial/nav.jade`.  
+Hexo-theme-Anatole shows links of 'About' and 'Links' pages in navbar by default. You should create two pages whose permalinks are `about` and `links`. If you would like to change those two urls or delete them, you can edit `/layout/partrial/nav.jade`.  
 
 ## For A Better Experience
 
