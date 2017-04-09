@@ -1,171 +1,202 @@
+.post-content .tip {
+  position: relative;
+  margin: 2em 0;
+  padding: 12px 24px 12px 30px;
+  border-left: 4px solid #f66;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: #f8f8f8
+}
+
+.post-content .tip br {
+  /**display: none**/
+}
+
+.post-content .tip:before {
+  position: absolute;
+  top: 14px;
+  left: -12px;
+  content: "!";
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f66;
+  font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif
+}
+
 .content > .post > .post-content > p {
-	word-wrap: break-word;
-	word-break: break-all;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 #ds-thread {
-	margin: 0 30px!important
+  margin: 0 30px!important
 }
 
 pre {
-	font-size: 0.8em!important;
-	background-color: #f8f8f8!important;
-	font-family: 'Roboto Mono','Lucida Console','Trebuchet MS','Courier New', Monaco, courier,'PingFang SC','Hiragino Sans GB','Microsoft Jhenghei','Microsoft YaHei', monospace!important
+  font-size: 0.8em!important;
+  background-color: #f8f8f8!important;
+  font-family: 'Roboto Mono','Lucida Console','Trebuchet MS','Courier New', Monaco, courier,'PingFang SC','Hiragino Sans GB','Microsoft Jhenghei','Microsoft YaHei', monospace!important
 }
 
 figure.highlight {
-	position: relative!important;
-	margin: 1em 0!important;
-	border-radius: 2px!important;
-	line-height: 1.1em!important;
-	background-color: #f8f8f8!important;
-	overflow-x: auto!important
+  position: relative!important;
+  margin: 1em 0!important;
+  border-radius: 2px!important;
+  line-height: 1.1em!important;
+  background-color: #f8f8f8!important;
+  overflow-x: auto!important
 }
 
 figure.highlight table,figure.highlight tr,figure.highlight td {
-	width: 100%!important;
-	border-collapse: collapse!important;
-	padding: 0!important;
-	margin: 0!important
+  width: 100%!important;
+  border-collapse: collapse!important;
+  padding: 0!important;
+  margin: 0!important
 }
 
 figure.highlight .gutter {
-	display: none!important
+  display: none!important
 }
 
 figure.highlight .code pre {
-	padding: 1.2em 1.4em!important;
-	line-height: 1.5em!important;
-	margin: 0!important
+  padding: 1.2em 1.4em!important;
+  line-height: 1.5em!important;
+  margin: 0!important
 }
 
 figure.highlight.html .code:after,figure.highlight.js .code:after,figure.highlight.bash .code:after,figure.highlight.css .code:after,figure.highlight.scss .code:after,figure.highlight.diff .code:after,figure.highlight.java .code:after,figure.highlight.xml .code:after,figure.highlight.python .code:after,figure.highlight.json .code:after,figure.highlight.swift .code:after,figure.highlight.ruby .code:after,figure.highlight.perl .code:after,figure.highlight.php .code:after,figure.highlight.c .code:after,figure.highlight.cpp .code:after {
-	position: absolute!important;
-	top: 0!important;
-	right: 0!important;
-	color: #ccc!important;
-	text-align: right!important;
-	font-size: 0.75em!important;
-	padding: 5px 10px 0!important;
-	line-height: 15px!important;
-	height: 15px!important;
-	font-weight: 600!important
+  position: absolute!important;
+  top: 0!important;
+  right: 0!important;
+  color: #ccc!important;
+  text-align: right!important;
+  font-size: 0.75em!important;
+  padding: 5px 10px 0!important;
+  line-height: 15px!important;
+  height: 15px!important;
+  font-weight: 600!important
 }
 
 figure.highlight.html .code:after {
-	content: "HTML"
+  content: "HTML"
 }
 
 figure.highlight.js .code:after {
-	content: "JS"
+  content: "JS"
 }
 
 figure.highlight.bash .code:after {
-	content: "BASH"
+  content: "BASH"
 }
 
 figure.highlight.css .code:after {
-	content: "CSS"
+  content: "CSS"
 }
 
 figure.highlight.scss .code:after {
-	content: "SCSS"
+  content: "SCSS"
 }
 
 figure.highlight.diff .code:after {
-	content: "DIFF"
+  content: "DIFF"
 }
 
 figure.highlight.java .code:after {
-	content: "JAVA"
+  content: "JAVA"
 }
 
 figure.highlight.xml .code:after {
-	content: "XML"
+  content: "XML"
 }
 
 figure.highlight.python .code:after {
-	content: "PYTHON"
+  content: "PYTHON"
 }
 
 figure.highlight.json .code:after {
-	content: "JSON"
+  content: "JSON"
 }
 
 figure.highlight.swift .code:after {
-	content: "SWIFT"
+  content: "SWIFT"
 }
 
 figure.highlight.ruby .code:after {
-	content: "RUBY"
+  content: "RUBY"
 }
 
 figure.highlight.perl .code:after {
-	content: "PERL"
+  content: "PERL"
 }
 
 figure.highlight.php .code:after {
-	content: "PHP"
+  content: "PHP"
 }
 
 figure.highlight.c .code:after {
-	content: "C"
+  content: "C"
 }
 
 figure.highlight.java .code:after {
-	content: "JAVA"
+  content: "JAVA"
 }
 
 figure.highlight.cpp .code:after {
-	content: "CPP"
+  content: "CPP"
 }
 
 figure.highlight.cpp .code:after {
-	content: 'C++'
+  content: 'C++'
 }
 
 pre {
-	color: #525252!important
+  color: #525252!important
 }
 
 pre .function .keyword,pre .constant {
-	color: #0092db!important
+  color: #0092db!important
 }
 
 pre .keyword,pre .attribute {
-	color: #e96900!important
+  color: #e96900!important
 }
 
 pre .number,pre .literal {
-	color: #ae81ff!important
+  color: #ae81ff!important
 }
 
 pre .tag,pre .tag .title,pre .change,pre .winutils,pre .flow,pre .lisp .title,pre .clojure .built_in,pre .nginx .title,pre .tex .special {
-	color: #2973b7!important
+  color: #2973b7!important
 }
 
 pre .symbol,pre .symbol .string,pre .value,pre .regexp {
-	color: #42b983!important
+  color: #42b983!important
 }
 
 pre .title {
-	color: #83B917!important
+  color: #83B917!important
 }
 
 pre .tag .value,pre .string,pre .subst,pre .haskell .type,pre .preprocessor,pre .ruby .class .parent,pre .built_in,pre .sql .aggregate,pre .django .template_tag,pre .django .variable,pre .smalltalk .class,pre .javadoc,pre .django .filter .argument,pre .smalltalk .localvars,pre .smalltalk .array,pre .attr_selector,pre .pseudo,pre .addition,pre .stream,pre .envvar,pre .apache .tag,pre .apache .cbracket,pre .tex .command,pre .prompt {
-	color: #42b983!important
+  color: #42b983!important
 }
 
 pre .comment,pre .java .annotation,pre .python .decorator,pre .template_comment,pre .pi,pre .doctype,pre .shebang,pre .apache .sqbracket,pre .tex .formula {
-	color: #b3b3b3!important
+  color: #b3b3b3!important
 }
 
 pre .deletion {
-	color: #BA4545!important
+  color: #BA4545!important
 }
 
 pre .coffeescript .javascript,pre .javascript .xml,pre .tex .formula,pre .xml .javascript,pre .xml .vbscript,pre .xml .css,pre .xml .cdata {
-	opacity: 0.5!important
+  opacity: 0.5!important
 }
 
 html {
@@ -254,7 +285,6 @@ dl dt {
       padding: 0; }
 
       blockquote {
-        -moz-box-sizing: border-box;
         box-sizing: border-box;
         margin: 1.6em 0 1.6em -2.2em;
         padding: 0 0 0 1.6em;
