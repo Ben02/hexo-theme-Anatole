@@ -11,4 +11,5 @@ block content
   .autopagerize_page_element: .content: .post-page
     include mixins
     +make_post(page, true)
-    include partial/comments
+    if page.comments
+        include partial/comments
