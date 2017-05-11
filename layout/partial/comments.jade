@@ -27,3 +27,10 @@ if theme.disqus
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     script(id='dsq-count-scr' src='//#{theme.disqus}.disqus.com/count.js' async)
+
+if theme.gentie
+    a#comments
+    #cloud-tie-wrapper.cloud-tie-wrapper
+    script.
+        var cloudTieConfig = { url: document.location.href, sourceId: '', productKey: '#{theme.gentie}', target: 'cloud-tie-wrapper' };
+    script(src='https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js')

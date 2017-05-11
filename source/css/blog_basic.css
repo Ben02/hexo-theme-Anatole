@@ -34,7 +34,7 @@
   word-break: break-all;
 }
 
-#ds-thread {
+#ds-thread,#disqus_thread,#cloud-tie-wrapper {
   margin: 0 30px!important
 }
 
