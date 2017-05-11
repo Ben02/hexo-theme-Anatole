@@ -392,6 +392,7 @@ a:hover, a:active {
   position: absolute;
   width: 100%;
   padding-bottom: 20px;
+  background: #fff;
 }
 .footer a {
   color: #A6A6A6;
