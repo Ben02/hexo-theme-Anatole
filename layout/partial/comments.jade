@@ -34,3 +34,22 @@ if theme.gentie
     script(src='https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js')
     script.
         var cloudTieConfig = { url: document.location.href, sourceId: '#{page.path}', productKey: '#{theme.gentie}', target: 'cloud-tie-wrapper' };var yunManualLoad = true;Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+
+if theme.youyan
+    a#comments
+    #youyan_thread(class='post')
+    script.
+        (function() {
+
+            var YYDiv = document.createElement('div');
+            YYDiv.id = 'uyan_frame';
+            document.getElementById('youyan_thread').appendChild(YYDiv);
+
+            var YYScript = document.createElement('script');
+            YYScript.type = 'text/javascript';
+            YYScript.async = true;
+            YYScript.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//v2.uyan.cc/code/uyan.js?uid=' + '#{theme.youyan}';
+            YYScript.charset = 'UTF-8';
+            document.getElementById('youyan_thread').appendChild(YYScript);
+
+        })();
