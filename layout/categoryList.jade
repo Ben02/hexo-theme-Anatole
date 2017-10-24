@@ -1,0 +1,14 @@
+extends partial/layout
+
+block site_title
+    != "分类 · " + config.title
+
+block description
+    - var desc = "分类 · " + config.title;
+    meta(name="description", content=desc)
+
+block content
+  .autopagerize_page_element: .content
+    .archive.animated.fadeInDown
+      ul.list-with-title
+        i.fa.fa-tag
