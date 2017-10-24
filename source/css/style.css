@@ -194,10 +194,10 @@ a:hover, a:active {
   margin: 0 auto;
 }
 .sidebar .logo-title .title h3 {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-size: 2rem;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   line-height: 1;
   margin: 0;
 }
