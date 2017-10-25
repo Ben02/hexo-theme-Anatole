@@ -21,9 +21,6 @@
     "url": "https://github.com/Ben02/hexo-theme-Anatole/issues"
   },
   "homepage": "https://github.com/Ben02/hexo-theme-Anatole#readme",
-  "devDependencies": {},
-  "dependencies": {
-    "hexo-generator-archive": "^0.1.4",
-    "hexo-renderer-jade": "^0.4.1"
+  "devDependencies": {
   }
 }
