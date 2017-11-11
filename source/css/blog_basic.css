@@ -41,7 +41,7 @@
 pre {
   font-size: 0.8em!important;
   background-color: #f8f8f8!important;
-  font-family: 'Roboto Mono','Lucida Console','Trebuchet MS','Courier New', Monaco, courier,'PingFang SC','Hiragino Sans GB','Microsoft Jhenghei','Microsoft YaHei', monospace!important
+  font-family: Monaco, 'Roboto Mono','Lucida Console','Trebuchet MS','Courier New', courier,'PingFang SC','Hiragino Sans GB','Microsoft Jhenghei','Microsoft YaHei', monospace!important
 }
 
 figure.highlight {
