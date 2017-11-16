@@ -247,7 +247,7 @@ a:hover, a:active {
   color: #5f5f5f;
 }
 .post .post-title h3 {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: 1px;
   line-height: 1;
   font-weight: 600;
