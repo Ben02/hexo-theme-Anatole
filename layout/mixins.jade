@@ -41,7 +41,7 @@ mixin make_pager()
 				li.next.pagbuttons
 					a.btn(role="navigation",href=url_for(next))= __('next')
 
-mixin postList()
+mixin postList(hide)
 	.archive
 		- var year = 0;
 		- var change = false;
@@ -66,7 +66,7 @@ mixin postList()
 				if tag.name == "hidden"
 					- show = 0
 					- break
-			if show == 0
+			if hide && show == 0
 				- return
 
 			.listing-item
