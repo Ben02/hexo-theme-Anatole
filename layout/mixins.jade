@@ -48,6 +48,7 @@ mixin postList()
 		- var firstYear = true;
 		- page.posts.each(function (item) {
 			- var itemYear = date(item.date, 'YYYY') - 0;
+			- var show = 1;
 			- change = year !== itemYear;
 			- year = change ? itemYear : year;
 			if change
@@ -61,6 +62,13 @@ mixin postList()
 					!= year
 					| </div><ul class="listing">
 			
+			for tag in item.tags.data
+				if tag.name == "hidden"
+					- show = 0
+					- break
+			if show == 0
+				- return
+
 			.listing-item
 				.listing-post
 					a(href= url_for(item.path), title= item.title)= item.title
