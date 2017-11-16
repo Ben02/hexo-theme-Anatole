@@ -75,3 +75,10 @@ mixin postList(hide)
 					div.post-time
 						span.date= date(item.date, 'MM-DD')
 		- })
+
+mixin categoryList()
+	for cat in page.cats.data
+		- console.log(cat)
+		i.fa.fa-tag
+		a.tag(href=config.root + "categories/" + cat.name, title= cat.name)= cat.name + "      "
+
