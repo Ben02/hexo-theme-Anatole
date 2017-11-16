@@ -3,6 +3,7 @@ TODO:
 - __add categories page for tags.__
 - __add something like _status_ and make it linkable to posts.__
 - __add about page.__
+- hide posts with certain tags.
 - add filter for posts displayed on index.
 
 
