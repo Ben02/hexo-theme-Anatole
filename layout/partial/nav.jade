@@ -17,9 +17,9 @@
         a(href="/archives")= __('Archive')
     li
       if is_current('category')
-        a.current(href="/category")= __('Categories')					
+        a.current(href="/category")= __('Categories') + __('Tags')					
       else
-        a(href="/category")= __('Categories')		
+        a(href="/category")= __('Categories') + __('Tags')	
   .information
     .back_btn
       li
