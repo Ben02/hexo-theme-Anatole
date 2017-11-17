@@ -41,13 +41,14 @@ mixin make_pager()
 				li.next.pagbuttons
 					a.btn(role="navigation",href=url_for(next))= __('next')
 
-mixin postList()
+mixin postList(hide)
 	.archive
 		- var year = 0;
 		- var change = false;
 		- var firstYear = true;
 		- page.posts.each(function (item) {
 			- var itemYear = date(item.date, 'YYYY') - 0;
+			- var show = 1;
 			- change = year !== itemYear;
 			- year = change ? itemYear : year;
 			if change
@@ -61,9 +62,29 @@ mixin postList()
 					!= year
 					| </div><ul class="listing">
 			
+			for tag in item.tags.data
+				if tag.name == "hidden"
+					- show = 0
+					- break
+			if hide && show == 0
+				- return
+
 			.listing-item
 				.listing-post
 					a(href= url_for(item.path), title= item.title)= item.title
 					div.post-time
 						span.date= date(item.date, 'MM-DD')
 		- })
+
+mixin categoryList()
+	for cat in page.cats.sort('posts').data
+		i.fa.fa-tag
+		a.tag(href=config.root + "categories/" + cat.name, title= cat.name)= cat.name + "      "
+
+mixin tagList()
+	for tag in page.tags.sort('posts').data
+		if tag.name == "hidden"
+			- continue
+		i.fa.fa-tag
+		a.tag(href=config.root + "tags/" + tag.name, title= tag.name)= tag.name + "      "
+

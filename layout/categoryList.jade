@@ -1,16 +1,19 @@
 extends partial/layout
 
 block site_title
-    != page.category + " · " + config.title
+    != "分类 · " + config.title
 
 block description
-    - var desc = '分类：' + page.category + ' - ' + config.title;
+    - var desc = "分类 · " + config.title;
     meta(name="description", content=desc)
 
 block content
   .autopagerize_page_element: .content
     .archive.animated.fadeInDown
       ul.list-with-title
+        .listing-title= __("Categories")
         include mixins
-        +postList(true)
-        +make_pager(__('prev'), __('next'))
+        +categoryList()
+        .listing-title= __("Tags")
+        include mixins
+        +tagList()
