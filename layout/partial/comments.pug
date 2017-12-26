@@ -54,19 +54,20 @@ if theme.youyan
 
         })();
 
-if theme.valine.enable == true
-    a#comments
-    #vcomments(style="margin:0 30px;")
-    script(src='//cdn1.lncld.net/static/js/3.0.4/av-min.js')
-    script(src='//cdn.jsdelivr.net/gh/xcss/valine@v1.1.7/dist/Valine.min.js' + '?v=' + theme.version)
-    script.
-      var valine = new Valine({
-        el:'#vcomments',
-        notify:#{theme.valine.notify} || false, 
-        verify:#{theme.valine.verify}|| false, 
-        app_id:'#{theme.valine.appid}',
-        app_key:'#{theme.valine.appkey}',
-        placeholder:'#{theme.valine.placeholder}',
-        path: window.location.pathname,
-        avatar:'#{theme.valine.avatar}'
-      })
+if theme.valine
+    if theme.valine.enable == true
+        a#comments
+        #vcomments(style="margin:0 30px;")
+        script(src='//cdn1.lncld.net/static/js/3.0.4/av-min.js')
+        script(src='//cdn.jsdelivr.net/gh/xcss/valine@v1.1.7/dist/Valine.min.js' + '?v=' + theme.version)
+        script.
+          var valine = new Valine({
+            el:'#vcomments',
+            notify:#{theme.valine.notify} || false, 
+            verify:#{theme.valine.verify}|| false, 
+            app_id:'#{theme.valine.appid}',
+            app_key:'#{theme.valine.appkey}',
+            placeholder:'#{theme.valine.placeholder}',
+            path: window.location.pathname,
+            avatar:'#{theme.valine.avatar}'
+          })
