@@ -693,3 +693,7 @@ a.btn {
     display: grid;
   }
 }
+
+.utterances {
+  margin-left: 30px;
+}
