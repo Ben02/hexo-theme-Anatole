@@ -22,13 +22,14 @@ block content
         a.fa.fa-twitter(href=url_for("http://twitter.com/home?status="+","+config.url+"/"+page.path+","+config.title+","+page.title+",;"))
     - var prev = page.prev ? page.prev.path : false;
     - var next = page.next ? page.next.path : false;
-    .pagination
-      ul.clearfix
-        if prev
-          li.pre.pagbuttons
-            a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
-        if next
-          li.next.pagbuttons
-            a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
+    if prev || next
+      .pagination
+        ul.clearfix
+          if prev
+            li.pre.pagbuttons
+              a.btn(role="navigation",href=url_for(prev), title=page.prev.title)!= __('prev_post')
+          if next
+            li.next.pagbuttons
+              a.btn(role="navigation",href=url_for(next), title=page.next.title)!= __('next_post')
     if page.comments
         include partial/comments

@@ -4,7 +4,8 @@
   "description": "A white and simple hexo theme, originated from a Farbox theme",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass ./source/css/style.scss ./source/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,5 @@
   "bugs": {
     "url": "https://github.com/Ben02/hexo-theme-Anatole/issues"
   },
-  "homepage": "https://github.com/Ben02/hexo-theme-Anatole#readme",
-  "devDependencies": {
-  }
+  "homepage": "https://github.com/Ben02/hexo-theme-Anatole#readme"
 }

@@ -6,6 +6,11 @@
       else
         a(href="/")= __('Home')	
     li
+      if is_current('about')
+        a.current(href="/about")= __('About')			
+      else
+        a(href="/about")= __('About')
+    li
       if is_archive()
         a.current(href="/archives")= __('Archive')
       else
