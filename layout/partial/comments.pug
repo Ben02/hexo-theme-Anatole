@@ -71,3 +71,19 @@ if theme.valine
             path: window.location.pathname,
             avatar:'#{theme.valine.avatar}'
           })
+
+
+if theme.utterances
+    #utter() 
+    script.
+        (function() {
+            var utterScript = document.createElement('script');
+            utterScript.async = true;
+            utterScript.src = 'https://utteranc.es/client.js';
+            utterScript.type = 'text/javascript';
+            utterScript.setAttribute('repo', '#{theme.utterances.repo}');
+            utterScript.setAttribute ('issue-term', 'pathname');
+            utterScript.setAttribute('theme', 'github-light');
+            utterScript.setAttribute('crossorigin', 'anonymous');
+            document.getElementById('utter').appendChild(utterScript);
+        })();
