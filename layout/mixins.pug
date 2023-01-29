@@ -32,14 +32,15 @@ mixin make_post(item, is_detail)
 mixin make_pager()
 	- var prev = page.prev_link
 	- var next = page.next_link
-	.pagination
-		ul.clearfix
-			if page.prev
-				li.pre.pagbuttons
-					a.btn(role="navigation",href=url_for(prev))= __('prev')
-			if page.next
-				li.next.pagbuttons
-					a.btn(role="navigation",href=url_for(next))= __('next')
+	if page.prev || page.next
+		.pagination
+			ul.clearfix
+				if page.prev
+					li.pre.pagbuttons
+						a.btn(role="navigation",href=url_for(prev))= __('prev')
+				if page.next
+					li.next.pagbuttons
+						a.btn(role="navigation",href=url_for(next))= __('next')
 
 mixin postList()
 	.archive

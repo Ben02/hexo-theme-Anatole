@@ -6,7 +6,7 @@ html {
 
 body {
   color: rgba(0, 0, 0, 0.5);
-  font-family: 'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
+  font-family: "PingHei", "PingFang SC", Helvetica Neue, "Work Sans", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
   font-size: 15px;
   width: 100%;
   margin: 0 auto 30px auto;
@@ -25,11 +25,11 @@ a {
 
 a:link, a:visited {
   opacity: 1;
-  -webkit-transition: all .15s linear;
-  -moz-transition: all .15s linear;
-  -o-transition: all .15s linear;
-  -ms-transition: all .15s linear;
-  transition: all .15s linear;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  -ms-transition: all 0.15s linear;
+  transition: all 0.15s linear;
   color: #424242;
 }
 
@@ -392,7 +392,6 @@ a:hover, a:active {
   position: absolute;
   width: 100%;
   padding-bottom: 20px;
-  background: #fff;
 }
 .footer a {
   color: #A6A6A6;
@@ -546,7 +545,7 @@ a.btn {
   position: relative;
   outline: 0;
   color: rgba(0, 0, 0, 0.44);
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   font-size: 14px;
   text-align: center;
   text-decoration: none;
@@ -563,7 +562,7 @@ a.btn {
   position: relative;
   outline: 0px;
   color: #464545;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   font-size: 14px;
   text-align: center;
   text-decoration: none;
@@ -575,22 +574,22 @@ a.btn {
   border-radius: 999em;
 }
 
-[role="back"] {
+[role=back] {
   padding: 0.5em 1.25em;
   line-height: 1.666em;
 }
 
-[role="home"] {
+[role=home] {
   padding: 0.5em 1.25em;
   line-height: 1.666em;
 }
 
-[role="navigation"] {
+[role=navigation] {
   padding: 0.5em 1.25em;
   line-height: 1.666em;
 }
 
-[role="tags"] {
+[role=tags] {
   padding: 6px 12px;
 }
 
@@ -612,7 +611,7 @@ a.btn {
   padding: 0.5em 1.25em;
   outline: 0;
   color: rgba(0, 0, 0, 0.44);
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   font-size: 14px;
   text-align: center;
   text-decoration: none;
@@ -669,27 +668,24 @@ a.btn {
   .sidebar .logo-title .title h3 {
     font-size: 20px;
   }
-
   .page-top {
     width: 100%;
   }
-
   .post-title h3 {
     line-height: 1.6;
   }
-
   .content {
     margin-top: 420px;
     width: 100%;
     z-index: 2;
     position: absolute;
   }
-
   .footer {
     display: none;
   }
-
-  .share {
-    display: grid;
-  }
 }
+.utterances {
+  margin-left: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

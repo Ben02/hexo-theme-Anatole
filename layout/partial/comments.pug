@@ -59,7 +59,7 @@ if theme.valine
         a#comments
         #vcomments(style="margin:0 30px;")
         script(src='//cdn1.lncld.net/static/js/3.0.4/av-min.js')
-        script(src='//cdn.jsdelivr.net/gh/xcss/valine@v1.1.7/dist/Valine.min.js' + '?v=' + theme.version)
+        script(src='//cdn.jsdelivr.net/gh/xcss/valine@latest/dist/Valine.min.js')
         script.
           var valine = new Valine({
             el:'#vcomments',
@@ -71,3 +71,19 @@ if theme.valine
             path: window.location.pathname,
             avatar:'#{theme.valine.avatar}'
           })
+
+
+if theme.utterances
+    #utter() 
+    script.
+        (function() {
+            var utterScript = document.createElement('script');
+            utterScript.async = true;
+            utterScript.src = 'https://utteranc.es/client.js';
+            utterScript.type = 'text/javascript';
+            utterScript.setAttribute('repo', '#{theme.utterances.repo}');
+            utterScript.setAttribute ('issue-term', 'pathname');
+            utterScript.setAttribute('theme', 'github-light');
+            utterScript.setAttribute('crossorigin', 'anonymous');
+            document.getElementById('utter').appendChild(utterScript);
+        })();

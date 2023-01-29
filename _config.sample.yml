@@ -25,4 +25,6 @@ valine:
   verify: false # true/false:verify code
   avatar: mm # avatar style https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
   placeholder: Just go go # comment box placeholder
-
+utterances:
+  # if you want to use utterance, please set the repo to your github repository to hold the comments
+  #repo: user/repo
